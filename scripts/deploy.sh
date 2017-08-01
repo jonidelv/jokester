@@ -5,6 +5,8 @@ cd dist;
 mkdir dist;
 cp -a ./build.js ./dist/;
 cp -a ./build.js.map ./dist/;
+rm build.js;
+rm build.js.map;
 mkdir static;
 cd ..;
 cp -a ./static/. ./dist/static;
