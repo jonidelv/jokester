@@ -5,15 +5,17 @@
     <button class="btn btn-primary" @click="initJokes">Add Ten Random Jokes</button>
     <button class="btn btn-primary" @click="addJoke">Add a Joke</button>
   </div>
-  <span v-for="type in types">
-    <input
-      type="checkbox"
-      :value="type"
-      v-model="checkedTypes"
-      checked
-    >
-    <label>{{type}}</label>&nbsp;
-  </span>
+  <div class="filter-container">
+    <span v-for="type in types">
+      <input
+        type="checkbox"
+        :value="type"
+        v-model="checkedTypes"
+        checked
+      >
+      <label>{{type}}</label>&nbsp;
+    </span>
+  </div>
   <br>
   <div class="col-md-12">
     <Joke

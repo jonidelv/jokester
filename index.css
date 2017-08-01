@@ -23,3 +23,7 @@
   border: 0;
   box-shadow: none;
 }
+
+.filter-container {
+  margin-bottom: 30px;
+}

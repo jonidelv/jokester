@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
 npm run build;
-cd dist:
-mkdir static:
-cd ..:
+cd dist;
+mkdir dist;
+cp -a ./build.js ./dist/;
+cp -a ./build.js.map ./dist/;
+mkdir static;
+cd ..;
 cp -a ./static/. ./dist/static;
 cp -a ./index.html ./dist/;
 cp -a ./index.css ./dist/;
